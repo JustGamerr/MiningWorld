@@ -1,1 +1,1 @@
-# BetterMiningWorld
+# MiningWorld
