@@ -1,0 +1,27 @@
+name: MiningWorld
+version: 0.1.2
+author: SunsetInteractive
+main: com.sunsetinteractive.miningworld.MiningWorld
+depend: [WorldGuard, Vault]
+loadafter: [WorldGuard]
+softdepend: [PlaceholderAPI, MVdWPlaceholderAPI]
+loadbefore: [Multiverse-Core]
+commands:
+    miningworld:
+        usage: /miningworld [args]
+        aliases: [mw, mine, mining, mineworld]
+    miningworldconfig:
+        usage: /miningworldconfig [args]
+        aliases: [mwc, mwconfig, mineconfig, mineworldconfig, minesettings]
+    miningworldreload:
+        usage: /miningworldreload
+        aliases: [mwr, minereload, mineworldreload, mwreload]
+    miningworldversion:
+        usage: /miningworldversion
+        aliases: [mwv, mineversion, mineworldversion, mwversion]
+    miningworldstats:
+        usage: /miningworldstats [player]
+        aliases: [mws, minestats, miningstats, mineworldstats, mwstats]
+    miningworldupgrades:
+        usage: /miningworldupgrades [player]
+        aliases: [mwu, mwupgrades, mineupgrades, miningupgrades, mineworldupgrades]
