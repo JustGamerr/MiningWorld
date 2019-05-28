@@ -5,7 +5,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import com.sunsetinteractive.miningworld.Messages;
+import com.sunsetinteractive.miningworld.utils.Messages;
 import com.sunsetinteractive.miningworld.MiningWorld;
 
 public class MiningWorldCommand implements CommandExecutor {
