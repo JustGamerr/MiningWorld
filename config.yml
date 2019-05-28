@@ -1,0 +1,54 @@
+# MiningWorld v0.1.1 developed by Sunset Interactive - complete with full in-game configuration. 
+
+
+World: 
+  normal-world-name: 'MiningWorld_normal_world'
+  nether-world-name: 'MiningWorld_nether_world'
+  end-world-name: 'MiningWorld_end_world'
+  use-seed-over-structures: true
+  seed: 10101101001010101  
+
+Menus:
+  Main:
+    Name: 'Mining World Transporation'
+    Rows: 3
+    Items:  
+      1:
+        Material: DIAMOND
+        Name: "Example Item"
+        Lore: []
+        Amount: 1
+        Action:
+          - 'msg! hello'
+          - '/miningworldstats'
+          - 'console! say hello'
+      5:
+        Material: DIAMOND
+        Name: "Example Item 2"
+        Lore: []
+        Amount: 1
+        Action:
+          - 'msg! hello'
+          - '/miningworldstats'
+          - 'console! say hello'
+      
+    
+# Customisable messages for the plugin to use
+# Variables - {PLAYER}, {REGION}, {VERSION}
+# Prefix for chat messagee, a space isn't necessary - leave blank to ignore the prefix.
+Messages: 
+  prefix: "&a&lMINING&8:"
+  plugin-reloaded: '&aConfiguration files successfully reloaded.'
+  missing-permission: '&cYou do not have permission to perform this command.'
+
+Permissions:
+  all-permissions: 'miningworld.admin'
+  main-command-permission: 'miningworld.open'
+  use-mine-permission: 'miningworld.use'
+  view-stats-permission: 'miningworld.stats'
+  view-others-stats-permission: 'miningworld.stats.others'
+  upgrades-permission: 'miningworld.upgrades'
+  others-upgrades-permission: 'miningworld.upgrades.others'
+  manage-upgrades-permission: 'miningworld.upgrades.manage'
+  config-permission: 'miningworld.config'
+  reload-permission: 'miningworld.reload'
