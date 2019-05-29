@@ -13,7 +13,6 @@ import org.bukkit.generator.ChunkGenerator;
 
 import com.sunsetinteractive.miningworld.MiningWorld;
 
-import com.sunsetinteractive.miningworld.configuration.FileManager.Config;
 import com.sunsetinteractive.miningworld.utils.Materials;
 
 public class VoidGenerator extends ChunkGenerator {
@@ -22,10 +21,9 @@ public class VoidGenerator extends ChunkGenerator {
 	public ChunkData generateChunkData(World world, Random random, int chunkX, int chunkZ, BiomeGrid biome) {
 		ChunkData chunkData = createChunkData(world);
 
-		MiningWorld miningWorld = MiningWorld.getInstance();
+		MiningWorld miningWorld = MiningWorld.getPlugin();
 
-		Config config = miningWorld.getFileManager().getConfig(new File(miningWorld.getDataFolder(), "config.yml"));
-		FileConfiguration configLoad = config.getFileConfiguration();
+		FileConfiguration configLoad = miningWorld.getConfig();
 
 		return chunkData;
 	}
