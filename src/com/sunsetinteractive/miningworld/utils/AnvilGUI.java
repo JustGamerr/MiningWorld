@@ -105,7 +105,7 @@ public class AnvilGUI {
 			}
 		};
 
-		Bukkit.getPluginManager().registerEvents(listener, MiningWorld.getInstance());
+		Bukkit.getPluginManager().registerEvents(listener, MiningWorld.getPlugin());
 	}
 
 	public Player getPlayer() {
