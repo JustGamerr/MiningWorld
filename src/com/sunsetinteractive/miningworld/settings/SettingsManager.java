@@ -18,33 +18,34 @@ import org.bukkit.inventory.meta.ItemMeta;
 import java.util.*;
 import java.util.regex.Pattern;
 
+
 public class SettingsManager implements Listener {
 
-    private final MiningWorld instance;
-
-    public SettingsManager(MiningWorld plugin) {
-        this.instance = plugin;
-        Bukkit.getPluginManager().registerEvents(this, plugin);
-    }
-
-    public void updateSettings() {
-        FileConfiguration config = instance.getConfig();
-        
-    }
-
-    public List<String> getStringList(String setting) {
-        return MiningWorld.getInstance().getConfig().getStringList(setting);
-    }
-
-    public boolean getBoolean(String setting) {
-        return MiningWorld.getInstance().getConfig().getBoolean(setting);
-    }
-
-    public int getInt(String setting) {
-        return MiningWorld.getInstance().getConfig().getInt(setting);
-    }
-
-    public String getString(String setting) {
-        return MiningWorld.getInstance().getConfig().getString(setting);
-    }
+//    private final MiningWorld instance;
+//    private final FileConfiguration config;
+//
+//    public SettingsManager(MiningWorld plugin) {
+//        this.instance = plugin;
+//        this.config = plugin.getConfig();
+//        Bukkit.getPluginManager().registerEvents(this, plugin);
+//    }
+//
+//    public void updateSettings() {
+//    }
+//
+//    public List<String> getStringList(String setting) {
+//        return config.getStringList(setting);
+//    }
+//
+//    public boolean getBoolean(String setting) {
+//        return config.getBoolean(setting);
+//    }
+//
+//    public int getInt(String setting) {
+//        return config.getInt(setting);
+//    }
+//
+//    public String getString(String setting) {
+//        return config.getString(setting);
+//    }
 }
