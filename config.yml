@@ -1,6 +1,5 @@
 # MiningWorld v0.1.1 developed by Sunset Interactive - complete with full in-game configuration. 
 
-
 World: 
   normal-world-name: 'MiningWorld_normal_world'
   nether-world-name: 'MiningWorld_nether_world'
@@ -10,36 +9,240 @@ World:
 
 Menus:
   Main:
-    Name: 'Mining World Transporation'
-    Rows: 3
+    Name: 'Mining World'
+    Rows: 4
+    BackOnClose: 'null'
     Items:  
-      1:
-        Material: DIAMOND
-        Name: "Example Item"
-        Lore: []
+      13:
+        Material: BOAT
+        Name: '&bClick to enter'
+        Lore: 
+         - '&7Mine ores to make money. You can bring'
+         - '&7your own items but be careful, you will'
+         - '&7take damage.'
+        Amount: 1
+        Action: 
+         - '[Transport]'
+      29:
+        Material: FIREWORK
+        Name: '&bClick to view Enhancements'
+        Lore: 
+         - '&7Special unlockable features available'
+         - '&7during mining world trips.'
         Amount: 1
         Action:
-          - 'msg! hello'
-          - '/miningworldstats'
-          - 'console! say hello'
-      5:
-        Material: DIAMOND
-        Name: "Example Item 2"
-        Lore: []
+         - 'msg! hello'
+         - '[Upgrades]'
+         - 'console! say hello'
+      31:
+        Material: NETHER_STAR
+        Name: '&dInformation'
+        Lore: 
+         - '&7While in the mining world, your goal'
+         - '&7is to mine as many ores as you can to'
+         - '&7make money for yourself when you leave.'
+         - ''
+         - '&cPvP is enabled.'
         Amount: 1
-        Action:
-          - 'msg! hello'
-          - '/miningworldstats'
-          - 'console! say hello'
-      
-    
+        Action: []
+      33:
+        Material: EXP_BOTTLE
+        Name: '&bMining Stats'
+        Lore: 
+         - '&7Look up how many blocks'
+         - '&7you have broken here.'
+        Amount: 1
+        Action: 
+         - '[Statistics]'     
+  Upgrades:
+    Name: 'Upgrades'
+    Rows: 5
+    BackOnClose: 'null'
+    Items:  
+      11:
+        Material: IRON_ORE
+        Name: '&cVein Miner'
+        Lore: 
+         - '&7This item is {status}!'
+         - '{ignoreIfLocked}&7Unlocked :)'
+         - '{ignoreIfUnlocked}&7Unlock cost: ${veinminer_cost}'
+         - ''
+         - '&7Click to purchase!'
+         - ''
+         - '&7This enhancement will mine a whole'
+         - '&7vein of ores at once.'
+        Amount: 1
+        Action: 
+         - '[MinerUpgrade]'
+      12:
+        Material: BOOK
+        Name: '&cCapitalist'
+        Lore: 
+         - '&7This item is {status}!'
+         - '{ignoreIfLocked}&7Unlocked :)'
+         - '{ignoreIfUnlocked}&7Unlock cost: ${capitalist_cost}'
+         - ''
+         - '&7Click to purchase!'
+         - ''
+         - '&7This enhancement will give you a chance'
+         - 'for your money to be multiplied when you'
+         - '&7mine an ore.'
+        Amount: 1
+        Action: 
+         - '[CapitalistUpgrade]'
+      13:
+        Material: POTION
+        Name: '&cBolt'
+        Lore: 
+         - '&7This item is {status}!'
+         - '{ignoreIfLocked}&7Unlocked :)'
+         - '{ignoreIfUnlocked}&7Unlock cost: ${bolt_cost}'
+         - ''
+         - '&7Click to purchase!'
+         - ''
+         - '&7This will give you the speed effect while you'
+         - '&7are in the mining world.'
+        Amount: 1
+        Action: 
+         - '[BoltUpgrade]'      
+      14:
+        Material: LAVA_BUCKET
+        Name: '&cHeatproof'
+        Lore: 
+         - '&7This item is {status}!'
+         - '{ignoreIfLocked}&7Unlocked :)'
+         - '{ignoreIfUnlocked}&7Unlock cost: ${heatproof_cost}'
+         - ''
+         - '&7Click to purchase!'
+         - ''
+         - '&7This will give you fire resistance while in'
+         - '&7the mining world.'
+        Amount: 1
+        Action: 
+         - '[HeatProofUpgrade]'   
+      15:
+        Material: TORCH
+        Name: '&cHeadtorch'
+        Lore: 
+         - '&7This item is {status}!'
+         - '{ignoreIfLocked}&7Unlocked :)'
+         - '{ignoreIfUnlocked}&7Unlock cost: ${headtorch_cost}'
+         - ''
+         - '&7Click to purchase!'
+         - ''
+         - '&7With this, you will receive night vision'
+         - '&7while you are in the mining world.'
+        Amount: 1
+        Action: 
+         - '[HeadTorchUpgrade]'
+      20:
+        Material: CHAINMAIL_LEGGINGS
+        Name: '&cKangaroo'
+        Lore: 
+         - '&7This item is {status}!'
+         - '{ignoreIfLocked}&7Unlocked :)'
+         - '{ignoreIfUnlocked}&7Unlock cost: ${kangaroo_cost}'
+         - ''
+         - '&7Click to purchase!'
+         - ''
+         - '&7This will give you a jump boost while'
+         - '&7you are roaming the mining world.'
+        Amount: 1
+        Action: 
+         - '[KangarooUpgrade]'   
+      21:
+        Material: FEATHER
+        Name: '&cFlight'
+        Lore: 
+         - '&7This item is {status}!'
+         - '{ignoreIfLocked}&7Unlocked :)'
+         - '{ignoreIfUnlocked}&7Unlock cost: ${flight_cost}'
+         - ''
+         - '&7Click to purchase!'
+         - ''
+         - '&7This will allow you to fly in the mining'
+         - '&7world, even if you do not have /fly.'
+        Amount: 1
+        Action: 
+         - '[FlightUpgrade]' 
+      22:
+        Material: IRON_ORE
+        Name: '&cShockwave'
+        Lore: 
+         - '&7This item is {status}!'
+         - '{ignoreIfLocked}&7Unlocked :)'
+         - '{ignoreIfUnlocked}&7Unlock cost: ${shockwave_cost}'
+         - ''
+         - '&7Click to purchase!'
+         - ''
+         - '&7This will allow you to mine in a 3x3'
+         - '&7with any pickaxe you want to.'
+        Amount: 1
+        Action: 
+         - '[ShockwaveUpgrade]' 
+      23:
+        Material: DIAMOND_BLOCK
+        Name: '&cLuck'
+        Lore: 
+         - '&7This item is {status}!'
+         - '{ignoreIfLocked}&7Unlocked :)'
+         - '{ignoreIfUnlocked}&7Unlock cost: ${luck_cost}'
+         - ''
+         - '&7Click to purchase!'
+         - ''
+         - '&7This will give you a chance to receive'
+         - '&7random items when you mine a block.'
+        Amount: 1
+        Action: 
+         - '[LuckUpgrade]' 
+      24:
+        Material: WATER_BUCKET
+        Name: '&cInvincible'
+        Lore: 
+         - '&7This item is {status}!'
+         - '{ignoreIfLocked}&7Unlocked :)'
+         - '{ignoreIfUnlocked}&7Unlock cost: ${invincible_cost}'
+         - ''
+         - '&7Click to purchase!'
+         - ''
+         - '&7This will cancel any damage you take'
+         - '&7in the mining world.'
+        Amount: 1
+        Action: 
+         - '[InvincibleUpgrade]'   
+      40:
+        Material: NETHER_STAR
+        Name: '&dInformation'
+        Lore: 
+         - '&7Hovering over each block will tell you'
+         - '&7how many of the block you have broken'
+         - '&7during your mining world trips.'
+        Amount: 1
+        Action: []
+  Stats:
+    Name: 'Your Mining Statistics'
+    Rows: 5
+    BackOnClose: 'null'
+    Items:  
+      31:
+        Material: NETHER_STAR
+        Name: '&dInformation'
+        Lore: 
+         - '&7You can unlock special abilities'
+         - '&7to use in the mining world here.'
+         - '&7You can use 2 abilities at a time.'
+        Amount: 1
+        Action: [] 
+ 
 # Customisable messages for the plugin to use
 # Variables - {PLAYER}, {REGION}, {VERSION}
-# Prefix for chat messagee, a space isn't necessary - leave blank to ignore the prefix.
+# Prefix for chat message, a space isn't necessary - leave blank to ignore the prefix.
 Messages: 
-  prefix: "&a&lMINING&8:"
+  use-prefix: false
+  prefix: ''
   plugin-reloaded: '&aConfiguration files successfully reloaded.'
   missing-permission: '&cYou do not have permission to perform this command.'
+  insufficient-funds-for-upgrades: '&cYou have insufficient funds to unlock this enhancement.'
 
 Permissions:
   all-permissions: 'miningworld.admin'
