@@ -1,4 +1,4 @@
-package com.alterum.miningworld.listeners;
+package dev.alterum.miningworld.listeners;
 
 import java.io.File;
 import java.util.List;
@@ -12,7 +12,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryOpenEvent;
 
-import com.alterum.miningworld.MiningWorld;
+import dev.alterum.miningworld.MiningWorld;
 
 import org.bukkit.event.inventory.InventoryClickEvent;
 

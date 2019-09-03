@@ -1,4 +1,4 @@
-package com.alterum.miningworld.economy;
+package dev.alterum.miningworld.economy;
 
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.Bukkit;

@@ -1,7 +1,7 @@
 name: MiningWorld
 version: 0.1.5
 author: Alterum
-main: com.alterum.miningworld.MiningWorld
+main: dev.alterum.miningworld.MiningWorld
 depend: [WorldGuard, Vault]
 loadafter: [WorldGuard]
 softdepend: [PlaceholderAPI, MVdWPlaceholderAPI]

@@ -1,13 +1,13 @@
-package com.alterum.miningworld.commands;
+package dev.alterum.miningworld.commands;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import com.alterum.miningworld.MiningWorld;
-import com.alterum.miningworld.menus.Upgrades;
-import com.alterum.miningworld.utils.Configuration;
+import dev.alterum.miningworld.MiningWorld;
+import dev.alterum.miningworld.menus.Upgrades;
+import dev.alterum.miningworld.utils.Configuration;
 
 public class UpgradesCommand implements CommandExecutor {
 	private final MiningWorld plugin;

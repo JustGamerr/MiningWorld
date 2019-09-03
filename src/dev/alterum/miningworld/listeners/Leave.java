@@ -1,4 +1,4 @@
-package com.alterum.miningworld.listeners;
+package dev.alterum.miningworld.listeners;
 
 import org.bukkit.event.Listener;
 

@@ -1,10 +1,10 @@
-package com.alterum.miningworld.commands;
+package dev.alterum.miningworld.commands;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
-import com.alterum.miningworld.MiningWorld;
+import dev.alterum.miningworld.MiningWorld;
 
 public class ConfigCommand implements CommandExecutor {
 

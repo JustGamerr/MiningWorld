@@ -1,4 +1,4 @@
-package com.alterum.miningworld.utils;
+package dev.alterum.miningworld.utils;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
@@ -18,8 +18,8 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import com.alterum.miningworld.MiningWorld;
-import com.alterum.miningworld.utils.NMSUtils;
+import dev.alterum.miningworld.MiningWorld;
+import dev.alterum.miningworld.utils.NMSUtils;
 
 public class AnvilGUI {
 

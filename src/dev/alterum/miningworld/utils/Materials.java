@@ -1,4 +1,4 @@
-package com.alterum.miningworld.utils;
+package dev.alterum.miningworld.utils;
 
 import java.lang.reflect.Method;
 import java.util.HashMap;

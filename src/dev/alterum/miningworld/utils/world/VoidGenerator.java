@@ -1,4 +1,4 @@
-package com.alterum.miningworld.utils.world;
+package dev.alterum.miningworld.utils.world;
 
 import java.io.File;
 import java.util.Arrays;
@@ -11,8 +11,8 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.generator.BlockPopulator;
 import org.bukkit.generator.ChunkGenerator;
 
-import com.alterum.miningworld.MiningWorld;
-import com.alterum.miningworld.utils.Materials;
+import dev.alterum.miningworld.MiningWorld;
+import dev.alterum.miningworld.utils.Materials;
 
 public class VoidGenerator extends ChunkGenerator {
 

@@ -1,4 +1,4 @@
-package com.alterum.miningworld.menus;
+package dev.alterum.miningworld.menus;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,8 +15,8 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import com.alterum.miningworld.MiningWorld;
-import com.alterum.miningworld.utils.InventoryUtils;
+import dev.alterum.miningworld.MiningWorld;
+import dev.alterum.miningworld.utils.InventoryUtils;
 
 public class Transport extends InventoryUtils {
 	

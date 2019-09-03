@@ -1,9 +1,9 @@
-package com.alterum.miningworld.utils.world;
+package dev.alterum.miningworld.utils.world;
 
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
-import com.alterum.miningworld.utils.NMSUtils;
+import dev.alterum.miningworld.utils.NMSUtils;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;

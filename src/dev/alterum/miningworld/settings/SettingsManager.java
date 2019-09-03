@@ -1,4 +1,4 @@
-package com.alterum.miningworld.settings;
+package dev.alterum.miningworld.settings;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -13,7 +13,7 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import com.alterum.miningworld.MiningWorld;
+import dev.alterum.miningworld.MiningWorld;
 
 import java.util.*;
 import java.util.regex.Pattern;

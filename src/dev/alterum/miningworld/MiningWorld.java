@@ -1,4 +1,4 @@
-package com.alterum.miningworld;
+package dev.alterum.miningworld;
 
 import java.io.File;
 
@@ -12,19 +12,19 @@ import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import com.alterum.miningworld.commands.ConfigCommand;
-import com.alterum.miningworld.commands.MiningWorldCommand;
-import com.alterum.miningworld.commands.ReloadCommand;
-import com.alterum.miningworld.commands.StatsCommand;
-import com.alterum.miningworld.commands.UpgradesCommand;
-import com.alterum.miningworld.commands.VersionCommand;
-import com.alterum.miningworld.economy.EconomyManager;
-import com.alterum.miningworld.listeners.Inventory;
-import com.alterum.miningworld.listeners.Join;
-import com.alterum.miningworld.listeners.Leave;
-import com.alterum.miningworld.listeners.World;
-import com.alterum.miningworld.utils.Configuration;
-import com.alterum.miningworld.utils.world.VoidGenerator;
+import dev.alterum.miningworld.commands.ConfigCommand;
+import dev.alterum.miningworld.commands.MiningWorldCommand;
+import dev.alterum.miningworld.commands.ReloadCommand;
+import dev.alterum.miningworld.commands.StatsCommand;
+import dev.alterum.miningworld.commands.UpgradesCommand;
+import dev.alterum.miningworld.commands.VersionCommand;
+import dev.alterum.miningworld.economy.EconomyManager;
+import dev.alterum.miningworld.listeners.Inventory;
+import dev.alterum.miningworld.listeners.Join;
+import dev.alterum.miningworld.listeners.Leave;
+import dev.alterum.miningworld.listeners.World;
+import dev.alterum.miningworld.utils.Configuration;
+import dev.alterum.miningworld.utils.world.VoidGenerator;
 
 public class MiningWorld extends JavaPlugin {
 	

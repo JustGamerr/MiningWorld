@@ -1,4 +1,4 @@
-package com.alterum.miningworld.utils;
+package dev.alterum.miningworld.utils;
 
 public class Configuration
 {
